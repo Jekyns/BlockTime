@@ -1,0 +1,47 @@
+
+<head>
+<script src="jqery.min.js"></script>
+    <script src="popup.js"></script>
+	<link rel="preload" as="style" href="styleone.css">
+	<meta charset="utf-8">
+	<style>
+		.vvodStart{
+			width:30%;
+			display:inline-block;
+		}
+		.vvodEnd{
+			width:30%;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body style="width:180px">
+<!--Пред загрузка-->
+<div class="loading">
+     <span class="ball1"></span>
+     <span class="ball2"></span>
+   </div>
+<!--Тело самого плагина-->
+<p><h1>Time Block</h1></p>
+<div>
+    <input type="radio" id="contactChoice1"
+    name="contact" value="moment" class="moment"> moment
+    <input type="radio" id="contactChoice2"
+           name="contact" value="x2" class="x2"> x2
+
+    <input type="radio" id="contactChoice3"
+           name="contact" value="x4" class="x4"> x4.
+</div>
+<div class="divError" id="error"></div>
+    <div>
+        <form action="javascript:void(0);" name="myform" id="myform">
+    URL:<br>
+    <input type="text" name="url" value="" class="vvod" id="myform__url"><br><br>
+    Start:
+    <input type="text" name="start" value="" class="vvod vvodStart" id="myform__start">
+    End:
+    <input type="text" name="end" value="" class="vvod vvodEnd" id="myform__end"><br><br>
+    <input type="submit" value="Отправить" id="submit" onclick="sendform();">
+</form>
+    </div>
+</body>
