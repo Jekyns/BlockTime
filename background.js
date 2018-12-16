@@ -57,7 +57,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     }
 	if (message.method == "serverTime") {
 		//alert(url);
-		var Site={serverName:"port.16mb.com"}; /* адрес сайта */
+		var Site={serverName:"akuzn97.000webhostapp.com"}; /* адрес сайта */
 
 			//alert(2);
 			$.ajax({
